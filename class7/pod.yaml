@@ -10,3 +10,8 @@ spec:
     - containerPort: 80
   nodeSelector: 
     hello: world
+  tolerations:
+  - key: "team"
+  operator: "Equal"
+  value: "kaizen"
+  effect: "NoSchedule"
